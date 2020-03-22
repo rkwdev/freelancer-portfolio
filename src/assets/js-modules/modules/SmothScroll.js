@@ -6,6 +6,7 @@ class SmothScroll {
     constructor() {
         this.navItems = $(".menu a");
         this.brandLogo = $(".brand__logo");
+        this.workLink = $(".work-link");
         this.addSmoothScrolling();
         this.addNavActive();
     }
@@ -16,6 +17,10 @@ class SmothScroll {
             speed: 1200
         });
         this.brandLogo.smoothScroll({
+            easing: "easeInOutBack",
+            speed: 1200
+        });
+        this.workLink.smoothScroll({
             easing: "easeInOutBack",
             speed: 1200
         });

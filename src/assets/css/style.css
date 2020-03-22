@@ -6386,8 +6386,7 @@ ul {
 .works__wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(276px, 1fr));
-  grid-auto-rows: -webkit-min-content;
-  grid-auto-rows: min-content;
+  grid-auto-rows: 1fr;
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
 }
@@ -6395,7 +6394,7 @@ ul {
 .works__item {
   position: relative;
   overflow: hidden;
-  height: 100%;
+  height: 1fr;
 }
 
 .works__item img {
@@ -6441,10 +6440,9 @@ ul {
 
 .works__item-detail span {
   display: block;
-  float: left;
-  margin-right: 0.5em;
-  padding-top: 0.1em;
+  margin-bottom: 0.5em;
   font-style: italic;
+  font-size: 0.9rem;
 }
 
 .works__item-detail li {
@@ -6453,7 +6451,7 @@ ul {
   margin-bottom: 0.5em;
   border-radius: 20px;
   border: 1px solid #999;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 }
 
 .works__item:hover .works__item-details {
@@ -6469,7 +6467,7 @@ ul {
 .footer span {
   display: block;
   font-size: 1.2rem;
-  margin-bottom: 0.8em;
+  margin-bottom: 1em;
 }
 
 .footer .marketplace {
@@ -6477,7 +6475,7 @@ ul {
   height: 39px;
   display: block;
   margin: 0 auto;
-  background: url("../images/fiverr.png");
+  background: url("../images/freelancer.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center 0%;
